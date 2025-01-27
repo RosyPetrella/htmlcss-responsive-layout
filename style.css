@@ -399,21 +399,28 @@ footer {
     }
 
     footer {
+        padding-bottom: 0;
 
         .bottom {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
     
             .left-part {
                 text-align: left;
                 padding-left: 1rem;
+                width: 50%;
+                margin-top: 0.5rem;
             }
     
             .right-part {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
+                
     
                 ul {
                 
