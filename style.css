@@ -5,10 +5,11 @@
     --main-darker: black;
     --text-header: #ff9614;
     --name-dessert: #4e3969;
+    --text-category: #b5bac8;
 }
 
 
-* {
+ {
     border: 0.5px dashed black;
 }
 
@@ -19,9 +20,16 @@ body {
 
 /* UTILITY */
 
+.show {
+    display: none;
+}
+
+
+
 .row {
     display: flex;
     flex-basis: auto;  
+    flex-direction: column;
 }
 .col {
     width: auto;
@@ -83,10 +91,60 @@ header {
 /* MAIN */
 main {
     background-color: var(--main-light);
+    padding-top: 1rem;
+    
 }
 
 .main-container {
     margin: 1rem 1rem 2rem 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.intro {
+    
+    p {
+        font-size: 1rem;
+        color: var(--text-category);
+        letter-spacing: 0.25rem;
+    }
+
+    h2 {
+        color: var(--name-dessert);
+        font-size: ;
+    }
+    
+    img {
+        width: 100%;
+    }
+
+    h3 {
+        padding-left: 1.5rem;
+    }
+
+    ul {
+        padding-inline-start: 1.5rem;
+        
+        li {
+            list-style: none;
+            font-weight: 200;
+            font-size: 0.75rem;
+            padding-bottom: 0.5rem;
+            vertical-align: middle;
+            
+            span {
+                font-weight: bold;
+            }
+            
+        }
+    }
+    
+    .recap {
+        background-color: var(--main-lighter);
+    }
+
 }
 
 
@@ -104,6 +162,29 @@ main {
         }
     }  
     
+    main {
+        padding-top: 1.5rem;
+    }
+    .main-container {
+        min-width: 720px;
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col-m-4 {
+            width: calc(100% / 12 * 4);
+        }
+    }
+
+    .show {
+        display: inline-block;
+    }
+    
 }
 
 
@@ -116,5 +197,41 @@ main {
             padding-left: 1rem;
         }
     }
-     
+
+    main {
+        padding-top: 1.5rem;
+    }
+    
+    .main-container {
+        margin: 0 auto;
+        min-width: 944px;
+        width: 70%;
+    }
+    .row {
+        flex-direction: row;
+    }
+
+    ul {
+        display: block;
+        
+        li {
+            display:block;
+        }
+
+        .col-l-12 {
+            width: 100%
+        }
+    }
+
+    .show {
+        display: inline-block;
+    }
+
+    .col-l-8 {
+        width: calc(100% / 12 * 8);
+    }
+
+    .col-l-4 {
+        width: calc(100% / 12 * 4);
+    }
 }
