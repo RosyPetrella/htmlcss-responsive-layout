@@ -393,29 +393,30 @@ footer {
             font-weight: bold;
         }
     }
-}
 
-footer {
+    footer {
 
-    .bottom {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .left-part {
-            text-align: left;
-            padding-left: 1rem;
-        }
-
-        .right-part {
+        .bottom {
             display: flex;
             flex-direction: row;
-            flex-wrap: nowrap;
-
-            ul {
-            
+            justify-content: space-between;
+    
+            .left-part {
+                text-align: left;
+                padding-left: 1rem;
+            }
+    
+            .right-part {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+    
+                ul {
+                
+                }
             }
         }
+    
     }
-
 }
+
