@@ -9,7 +9,7 @@
 }
 
 
- {
+ *{
     border: 0.5px dashed black;
 }
 
@@ -24,6 +24,29 @@ body {
     display: none;
 }
 
+.btn {
+    background-color: var(--main-lighter);
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem 0.75rem;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.fa-facebook {
+    color: blue;
+}
+.fa-twitter {
+    color: rgb(74, 184, 228);
+}
+.fa-instagram {
+    color: purple;
+}
+.fa-pinterest {
+    color: red;
+}
+.fa-youtube {
+    color: red;
+}
 
 
 .row {
@@ -147,6 +170,24 @@ main {
 
 }
 
+.social {
+    
+    .social-list {
+
+    }
+
+    ul {
+        padding-inline-start: none;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+
+        li {
+            list-style: none;
+            
+        }
+    }
+}
 
 
 
@@ -172,19 +213,28 @@ main {
         
     }
 
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-
-        .col-m-4 {
-            width: calc(100% / 12 * 4);
+    .intro {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+    
+            .col-m-4 {
+                width: calc(100% / 12 * 4);
+            }
+        }
+    
+        .show {
+            display: inline-block;
         }
     }
-
-    .show {
-        display: inline-block;
-    }
     
+    .social {
+
+        .btn-m {
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
+        }
+    }
 }
 
 
@@ -233,5 +283,19 @@ main {
 
     .col-l-4 {
         width: calc(100% / 12 * 4);
+    }
+
+    .social {
+
+        .show {
+            display: inline-block;
+        }
+
+        .btn-m {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-size: 12px;
+            font-weight: bold;
+        }
     }
 }
