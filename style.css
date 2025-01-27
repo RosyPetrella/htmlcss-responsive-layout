@@ -16,6 +16,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* UTILITY */
@@ -119,8 +120,7 @@ main {
 }
 
 .main-container {
-    margin: 1rem 1rem 2rem 1rem;
-    font-family: "Montserrat", sans-serif;
+    margin: 1rem 1rem 0rem 1rem;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
@@ -198,6 +198,7 @@ main {
 
 .presentation {
     padding-bottom: 2rem;
+
     img {
         width: 70%;
         display: block;
@@ -219,7 +220,61 @@ main {
     }
 }
 
+/* FOOTER */
+footer {
+    background-color: var(--main-dark);
+    color: white;
+    font-size: 12px;
+    padding-bottom: 2rem;
 
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .left-part {
+        width: 100%;
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        
+        p {
+            margin-bottom: 0.25rem;
+            margin-top: 0.25rem;
+        }
+    }
+
+    .right-part {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+        
+    }
+
+    ul {
+        padding-inline-start: 0px;
+        margin: 0.25rem 0.5rem;
+        
+        
+
+        li {
+            
+            list-style: none;
+            
+            
+            a {
+                color: white;
+            }
+        }
+    }
+}
 
 /* META QUERY */
 
@@ -276,7 +331,6 @@ main {
         }
     }
 }
-
 
 
 @media screen and (min-width: 992px){
@@ -339,4 +393,29 @@ main {
             font-weight: bold;
         }
     }
+}
+
+footer {
+
+    .bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .left-part {
+            text-align: left;
+            padding-left: 1rem;
+        }
+
+        .right-part {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            ul {
+            
+            }
+        }
+    }
+
 }
