@@ -355,18 +355,22 @@ footer {
     .row {
         flex-direction: row;
     }
-
-    ul {
-        display: block;
-        
-        li {
-            display:block;
+    .intro {
+        ul {
+            display: flex;
+            flex-direction: column;
+            
+            li {
+                display:block;
+            }
+    
+            .col-l-12 {
+                width: 100%
+            }
         }
 
-        .col-l-12 {
-            width: 100%
-        }
     }
+    
 
     .show {
         display: inline-block;
