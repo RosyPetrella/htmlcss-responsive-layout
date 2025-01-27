@@ -1,0 +1,61 @@
+:root {
+    --main-lighter: white;
+    --main-light: #f6f5f3;
+    --main-dark: #7c69a4;
+    --main-darker: black;
+    --text-header: #ff9614;
+    --name-dessert: #4e3969;
+}
+
+
+* {
+    border: 0.5px dashed black;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+
+    h1 {
+    font-family: "Nerko One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-header);
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    }
+
+}
+
+
+/* META QUERY */
+
+@media screen and (min-width: 768px){
+
+    header {
+
+        h1 {
+            text-align: left;
+            padding-left: 1rem;
+        }
+    }  
+    
+}
+
+
+@media screen and (min-width: 992px){
+
+    header {
+
+        h1 {
+            text-align: left;
+            padding-left: 1rem;
+        }
+    }
+     
+}
